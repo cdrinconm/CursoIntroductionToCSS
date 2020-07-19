@@ -1,0 +1,105 @@
+@font-face{
+  font-family: myFont; /*Tipo de letra personalizado*/
+  src: url('Coleen.ttf'),;
+}
+
+h1{
+  background-color: #ece02c;
+  color: #000000;
+  font-size: 200%;/*Tamaño de letra*/
+  font-family: Impact, 'Arial Narrow Bold', sans-serif, myFont; /*Varias opciones en caso de que el browser no tenga la primera*/
+  font-style: italic !important; /*si esta propiedad esta diferente mas adelante, no la cambia*/
+  font-variant: small-caps; /*Mayusculas pero unas mas grande que otras*/
+  line-height: 50%;/*Interlineado*/
+}
+
+header, footer{
+  background: #beb753;
+  text-align: center;
+}
+
+nav{
+  font-variant: small-caps;
+  font-size: 100%;
+  font-family: Arial, "Times New Roman", serif;
+}
+
+h2{
+  color: #000000;
+  background: #eeebbb;
+}
+
+details{
+  font-style: italic;
+}
+
+summary{
+  font-style: normal;
+}
+
+
+pruebas{
+  /*display: inline-block; /*coloca los elementos en linea horizontal en bloque*/
+  display: block; /*coloca los elementos en linea vertical en bloque*/
+  float: right; /*similar a reverse en bootstrap*/
+  display: scroll; /*crea un scroll en el div asi no sea necesario*/
+  display: auto; /*crea un scroll en el div cuando sea necesario*/
+  border: solid 1px #000000; /*dotted, dashed, double, groove, ridge, inset, outset, hidden*/
+  border-width: 3px; /*en todo el borde*/
+  border-width: 3px 10px; /*primero arriba y abajo, segundo en los lados*/
+  margin: 10px; /*margen con otros elementos*/
+  padding: 10px; /*margen interno con el borde*/
+}
+
+a{
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  background: #0006CC;
+  width: 200px;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none; /*para los links, quitar underline*/
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+
+a:hover{ /*al pasar el mouse por encima*/
+  background: #B3B3B3;
+  color: #0006CC;
+}
+
+a:focus{ /*focus en el link, al acceder con tabs*/
+  background: #B3B3B3;
+  color: #0006CC;
+}
+
+a:active{/*al dar click*/
+  border: 3px solid;
+}
+
+ul{ /*enlistar cosas*/
+  list-style-type: armenian; /*lower-roman, upper-roman, decimal, decimal-leading-zero, upper-alpha,
+  lower-alpha, hebrew, armenian*/
+  list-style-image: square url('icon.gif'); /*colocar una imagen para enlistar*/
+}
+
+*{ /*afecta a toda la pagina, tambien estan:
+  footer h1 -> los h1 que esten dentro del footer
+  footer > h1 -> hijos directos
+  footer ~ h1 -> hermanos directos
+  footer + h1 -> adjacentes
+  footer, h1 -> afecta al footer y todos los h1
+  .class #id -> afecta a los id y a las clase de ese tipo, la clase es multiple el id es unico
+  a[href] -> afecta a los link con ese atributo
+  a[href="info.html"] -> afecta a los link con ese atributo con ese valor
+  a[href^="http://umich"] -> todos los link que tenga un atributo que empiece por eso
+  a[src$=".png"] -> todos los link que tenga un atributo que termine por eso
+  a[href*="umich"] -> todos los link que tenga un atributo que contenga eso
+  */
+  border: #0006CC;
+  background: #00ff00 url("imgs/ocean.jpg") no-repeat fixed center; /*-color, -image, -repeat, -position*/
+  background: radial-gradient(#648880, #293f50); /*gradiente del centro hacia afuera*/
+  background: linear-gradient(to right, #f6f1d3, #648880, #293f50); /*de un lado a otro*/
+}

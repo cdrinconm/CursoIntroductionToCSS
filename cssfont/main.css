@@ -1,0 +1,7 @@
+h1{
+  /* Using the custom font we've included in the HTML tab: */
+  font-family: Satisfy, cursive;
+  font-weight:normal;
+  font-size:24px;
+  padding-top: 60px;
+}
